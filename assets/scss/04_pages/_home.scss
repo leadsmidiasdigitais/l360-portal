@@ -1,0 +1,48 @@
+/* ==========================================================
+   Leads 360º Platform
+   Home
+========================================================== */
+
+.hero{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.hero h1{
+
+    font-size:3.5rem;
+
+    font-weight:700;
+
+    color:#000;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:680px;
+
+    color:#606060;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+}

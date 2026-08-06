@@ -1,0 +1,107 @@
+/* ==========================================================
+   Leads 360º Platform
+   Result Card
+   Arquivo: _result.scss
+   Versão: 1.0.0
+========================================================== */
+
+.result{
+
+    width:100%;
+    max-width:900px;
+
+    margin-top:40px;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.result-card{
+
+    width:100%;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    border:1px solid #ececec;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+
+.result-score{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    color:#fad02c;
+
+    margin-bottom:20px;
+
+}
+
+
+.result-title{
+
+    font-size:1.5rem;
+
+    font-weight:600;
+
+    color:#000;
+
+    margin-bottom:16px;
+
+}
+
+
+.result-text{
+
+    color:#606060;
+
+    line-height:1.8;
+
+    margin-bottom:32px;
+
+}
+
+
+.result button{
+
+    height:56px;
+
+    padding:0 32px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#606060;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+
+.result button:hover{
+
+    background:#000000;
+
+}

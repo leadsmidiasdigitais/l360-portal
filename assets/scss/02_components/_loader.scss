@@ -1,0 +1,64 @@
+/* ==========================================================
+   Leads 360º Platform
+   Component :: Loader
+   Arquivo: _loader.scss
+   Versão: 1.0.0
+========================================================== */
+
+.loader{
+
+    display:none;
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:60px auto;
+
+    text-align:center;
+
+}
+
+.loader-circle{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    border:6px solid #ECECEC;
+
+    border-top:6px solid #FAD02C;
+
+    animation:l360Spin 1s linear infinite;
+
+}
+
+.loader p{
+
+    margin-top:25px;
+
+    font-size:18px;
+
+    color:#606060;
+
+}
+
+@keyframes l360Spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}

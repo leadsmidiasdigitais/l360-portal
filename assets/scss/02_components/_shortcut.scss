@@ -1,0 +1,89 @@
+/* ==========================================================
+   Leads 360º Platform
+   Quick Links
+   Arquivo: _shortcut.scss
+   Versão: 1.0.0
+========================================================== */
+
+.shortcuts{
+
+    width:100%;
+    max-width:900px;
+
+    margin-top:50px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+.shortcut{
+
+    text-decoration:none;
+
+    color:#000;
+
+    background:#ffffff;
+
+    border:1px solid #ececec;
+
+    border-radius:18px;
+
+    padding:28px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.25s;
+
+    cursor:pointer;
+
+}
+
+.shortcut:hover{
+
+    border-color:#fad02c;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.shortcut span{
+
+    font-size:2rem;
+
+    margin-bottom:12px;
+
+}
+
+.shortcut strong{
+
+    font-size:1rem;
+
+    font-weight:700;
+
+}
+
+.shortcut small{
+
+    margin-top:6px;
+
+    color:#606060;
+
+    text-align:center;
+
+    line-height:1.4;
+
+}

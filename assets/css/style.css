@@ -1,0 +1,2921 @@
+/* ==========================================================
+   LEADS 360º PLATFORM
+   STYLE.CSS
+
+   HOME v1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    font-family:
+
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    background:
+
+    var(--background);
+
+    color:
+
+    var(--text);
+
+    overflow-x:hidden;
+
+    transition:
+
+    background .35s ease,
+    color .35s ease;
+
+}
+
+
+
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+
+header{
+
+    width:100%;
+
+    padding:
+
+    35px 20px;
+
+}
+
+
+
+
+
+.header-container{
+
+    max-width:
+
+    1280px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+}
+
+
+
+
+
+.logo{
+
+    width:
+
+    260px;
+
+    height:auto;
+
+}
+
+
+
+
+
+.header-actions{
+
+    position:absolute;
+
+    right:0;
+
+    top:50%;
+
+    transform:
+
+    translateY(-50%);
+
+}
+
+
+
+
+
+.theme-btn{
+
+    width:
+
+    46px;
+
+
+    height:
+
+    46px;
+
+
+    border-radius:
+
+    50%;
+
+
+    border:none;
+
+
+    background:
+
+    var(--surface);
+
+
+    color:
+
+    var(--text);
+
+
+    cursor:pointer;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    font-size:
+
+    20px;
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+    transition:
+
+    .25s;
+
+}
+
+
+
+
+
+.theme-btn:hover{
+
+    transform:
+
+    scale(1.08);
+
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+
+.hero{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:
+
+    40px auto 0;
+
+    padding:
+
+    20px;
+
+    text-align:center;
+
+}
+
+
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:
+
+    8px 22px;
+
+    border-radius:
+
+    999px;
+
+    background:
+
+    var(--primary);
+
+    color:#111;
+
+    font-size:
+
+    13px;
+
+    font-weight:
+
+    700;
+
+    margin-bottom:
+
+    25px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:
+
+    52px;
+
+    line-height:
+
+    1.15;
+
+    font-weight:
+
+    700;
+
+    margin-bottom:
+
+    20px;
+
+}
+
+
+
+.hero p{
+
+    max-width:
+
+    720px;
+
+    margin:
+
+    auto;
+
+    font-size:
+
+    20px;
+
+    line-height:
+
+    1.8;
+
+    color:
+
+    var(--text-secondary);
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   SEARCH
+========================================================== */
+
+
+.search-section{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:
+
+    55px auto;
+
+}
+
+
+
+.search-wrapper{
+
+    width:
+
+    100%;
+
+    max-width:
+
+    920px;
+
+    padding:
+
+    20px;
+
+}
+
+
+
+
+
+.search-box{
+
+    position:relative;
+
+    width:100%;
+
+    padding:
+
+    3px;
+
+    border-radius:
+
+    999px;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+.search-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-200%;
+
+
+    background:
+
+    conic-gradient(
+
+        from 0deg,
+
+        #FFFFFF,
+
+        #FAD02C,
+
+        #999999,
+
+        #FAD02C,
+
+        #FFFFFF
+
+    );
+
+
+    animation:
+
+    l360BorderRotate 5s linear infinite;
+
+}
+
+
+
+
+
+.search-box input{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    height:
+
+    74px;
+
+    border:none;
+
+    outline:none;
+
+
+    border-radius:
+
+    999px;
+
+
+    background:
+
+    var(--search-background);
+
+
+    color:
+
+    var(--text);
+
+
+    font-size:
+
+    18px;
+
+
+    font-weight:
+
+    700;
+
+
+    padding:
+
+    0 130px 0 30px;
+
+
+}
+
+
+
+.search-box input::placeholder{
+
+    color:
+
+    var(--placeholder);
+
+}
+
+
+
+
+
+.search-button{
+
+    position:absolute;
+
+    z-index:3;
+
+    right:15px;
+
+    top:50%;
+
+    transform:
+
+    translateY(-50%);
+
+
+    border:none;
+
+    background:transparent;
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+
+    cursor:pointer;
+
+
+    font-size:
+
+    18px;
+
+
+    color:
+
+    var(--text);
+
+}
+
+
+
+.search-global{
+
+    font-size:
+
+    14px;
+
+    font-weight:
+
+    700;
+
+}
+
+
+
+
+
+
+@keyframes l360BorderRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.hidden-search{
+
+    display:none !important;
+
+}
+
+
+
+
+
+
+/* ==========================================================
+   REGIÃO
+========================================================== */
+
+
+.location-box{
+
+    display:flex;
+
+    gap:
+
+    20px;
+
+    margin-top:
+
+    20px;
+
+}
+
+
+
+
+
+.location-box select{
+
+    flex:1;
+
+
+    height:
+
+    55px;
+
+
+    border-radius:
+
+    14px;
+
+
+    border:
+
+    2px solid var(--primary);
+
+
+    background:
+
+    var(--surface);
+
+
+    color:
+
+    var(--text);
+
+
+    padding:
+
+    0 18px;
+
+
+    font-size:
+
+    15px;
+
+}
+
+
+
+
+
+
+
+.search-tip{
+
+    text-align:center;
+
+    margin-top:
+
+    18px;
+
+
+    font-size:
+
+    14px;
+
+
+    color:
+
+    var(--text-secondary);
+
+}
+
+
+
+
+
+.search-tip:first-letter{
+
+    color:
+
+    var(--primary);
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   LOADER
+========================================================== */
+
+
+.loader{
+
+    display:none;
+
+    flex-direction:
+
+    column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:
+
+    25px;
+
+
+    margin:
+
+    50px auto;
+
+
+}
+
+
+
+.loader-circle{
+
+
+    width:
+
+    90px;
+
+
+    height:
+
+    90px;
+
+
+    border-radius:
+
+    50%;
+
+
+    border:
+
+    6px solid transparent;
+
+
+    border-top-color:
+
+    #FAD02C;
+
+
+    border-right-color:
+
+    #FFFFFF;
+
+
+    border-bottom-color:
+
+    #999999;
+
+
+    animation:
+
+    spin 1s linear infinite;
+
+}
+
+
+
+@keyframes spin{
+
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+
+}
+
+
+
+.loader-status{
+
+    text-align:center;
+
+}
+
+
+
+.loader-status p{
+
+    font-size:
+
+    18px;
+
+    font-weight:
+
+    700;
+
+}
+
+
+
+.loader-status ul{
+
+    list-style:none;
+
+    margin-top:
+
+    15px;
+
+    color:
+
+    var(--text-secondary);
+
+    line-height:
+
+    1.8;
+
+}
+
+/* ==========================================================
+   RESULTADO
+========================================================== */
+
+
+.result{
+
+    display:none;
+
+    width:100%;
+
+    max-width:
+
+    900px;
+
+    margin:
+
+    40px auto;
+
+    padding:
+
+    20px;
+
+    justify-content:center;
+
+}
+
+
+
+.result-card{
+
+
+    width:100%;
+
+
+    background:
+
+    var(--surface);
+
+
+    border:
+
+    1px solid var(--border);
+
+
+    border-radius:
+
+    22px;
+
+
+    padding:
+
+    45px 40px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+}
+
+
+
+
+
+
+.result-label{
+
+
+    display:inline-block;
+
+
+    font-size:
+
+    13px;
+
+
+    font-weight:
+
+    700;
+
+
+    letter-spacing:
+
+    2px;
+
+
+    color:
+
+    var(--text-secondary);
+
+
+    margin-bottom:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+.result-score{
+
+
+    font-size:
+
+    78px;
+
+
+    font-weight:
+
+    800;
+
+
+    color:
+
+    var(--primary);
+
+
+    line-height:
+
+    1;
+
+
+    margin-bottom:
+
+    25px;
+
+
+}
+
+
+
+
+
+
+.result-card h2{
+
+
+    font-size:
+
+    30px;
+
+
+    font-weight:
+
+    700;
+
+
+    margin-bottom:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+.result-text{
+
+
+    max-width:
+
+    650px;
+
+
+    margin:
+
+    0 auto;
+
+
+    color:
+
+    var(--text-secondary);
+
+
+    font-size:
+
+    17px;
+
+
+    line-height:
+
+    1.8;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   RESULT ACTIONS
+========================================================== */
+
+
+.result-actions{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    gap:
+
+    18px;
+
+
+    margin-top:
+
+    35px;
+
+
+}
+
+
+
+
+
+
+
+#btnConnect{
+
+
+    width:
+
+    260px;
+
+
+    height:
+
+    58px;
+
+
+    border:none;
+
+
+    border-radius:
+
+    999px;
+
+
+    background:
+
+    var(--primary);
+
+
+    color:
+
+    #111;
+
+
+    font-size:
+
+    16px;
+
+
+    font-weight:
+
+    700;
+
+
+    cursor:pointer;
+
+
+    transition:
+
+    .25s;
+
+
+}
+
+
+
+
+
+
+
+#btnConnect:hover{
+
+
+    transform:
+
+    translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+#btnRestart{
+
+
+    width:
+
+    220px;
+
+
+    height:
+
+    58px;
+
+
+    border-radius:
+
+    999px;
+
+
+    border:
+
+    2px solid var(--primary);
+
+
+    background:
+
+    transparent;
+
+
+    color:
+
+    var(--text);
+
+
+    font-size:
+
+    15px;
+
+
+    font-weight:
+
+    700;
+
+
+    cursor:pointer;
+
+
+    transition:
+
+    .25s;
+
+
+}
+
+
+
+
+
+
+
+#btnRestart:hover{
+
+
+    background:
+
+    rgba(250,208,44,.15);
+
+
+}
+/* ==========================================================
+   MINHA EVOLUÇÃO
+========================================================== */
+
+
+.panel-card{
+
+
+    display:none;
+
+
+    width:100%;
+
+
+    max-width:
+
+    900px;
+
+
+    margin:
+
+    40px auto;
+
+
+    padding:
+
+    35px;
+
+
+    background:
+
+    var(--surface);
+
+
+    border:
+
+    1px solid var(--border);
+
+
+    border-radius:
+
+    22px;
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+.panel-header{
+
+
+    text-align:center;
+
+
+    font-size:
+
+    28px;
+
+
+    font-weight:
+
+    700;
+
+
+    margin-bottom:
+
+    30px;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   ESTADO SEM CONEXÃO
+========================================================== */
+
+
+.panel-empty{
+
+
+    text-align:center;
+
+
+    padding:
+
+    30px;
+
+
+}
+
+
+
+.panel-empty h3{
+
+
+    font-size:
+
+    22px;
+
+
+    margin-bottom:
+
+    15px;
+
+
+}
+
+
+
+.panel-empty p{
+
+
+    color:
+
+    var(--text-secondary);
+
+
+    margin-bottom:
+
+    25px;
+
+
+    line-height:
+
+    1.7;
+
+
+}
+
+
+
+#btnPanelConnect{
+
+
+    width:
+
+    240px;
+
+
+    height:
+
+    58px;
+
+
+    border:none;
+
+
+    border-radius:
+
+    999px;
+
+
+    background:
+
+    var(--primary);
+
+
+    color:#111;
+
+
+    font-weight:
+
+    700;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   CONTEÚDO EVOLUÇÃO
+========================================================== */
+
+
+.panel-content{
+
+
+    display:none;
+
+
+}
+
+
+
+
+
+
+
+.panel-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+
+    gap:
+
+    18px;
+
+
+}
+
+
+
+
+
+
+
+.panel-item{
+
+
+    background:
+
+    var(--card);
+
+
+    border-radius:
+
+    16px;
+
+
+    padding:
+
+    25px 15px;
+
+
+    text-align:center;
+
+
+    border:
+
+    1px solid var(--border);
+
+
+}
+
+
+
+.panel-item span{
+
+
+    display:block;
+
+
+    color:
+
+    var(--text-secondary);
+
+
+    font-size:
+
+    14px;
+
+
+    margin-bottom:
+
+    10px;
+
+
+}
+
+
+
+.panel-item strong{
+
+
+    display:block;
+
+
+    font-size:
+
+    30px;
+
+
+    color:
+
+    var(--primary);
+
+
+}
+
+
+
+
+
+
+
+.panel-opportunity{
+
+
+    font-size:
+
+    22px!important;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================================
+   PDF DAS DICAS
+========================================================== */
+
+
+.panel-pdfs{
+
+
+    margin-top:
+
+    35px;
+
+
+    padding:
+
+    25px;
+
+
+    background:
+
+    var(--card);
+
+
+    border-radius:
+
+    18px;
+
+
+}
+
+
+
+.panel-pdfs h4{
+
+
+    margin-bottom:
+
+    15px;
+
+
+}
+
+
+
+.panel-pdfs ul{
+
+
+    list-style:none;
+
+
+}
+
+
+
+.panel-pdfs li{
+
+
+    padding:
+
+    12px;
+
+
+    border-bottom:
+
+    1px solid var(--border);
+
+
+    color:
+
+    var(--text-secondary);
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   MENSAGEM FINAL
+========================================================== */
+
+
+.panel-message{
+
+
+    margin-top:
+
+    30px;
+
+
+    text-align:center;
+
+
+    color:
+
+    var(--text-secondary);
+
+
+    line-height:
+
+    1.8;
+
+
+    font-size:
+
+    16px;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   CONTRATAÇÃO
+========================================================== */
+
+
+.panel-actions{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    margin-top:
+
+    35px;
+
+
+}
+
+
+
+#btnContract{
+
+
+    width:
+
+    300px;
+
+
+    height:
+
+    62px;
+
+
+    border:none;
+
+
+    border-radius:
+
+    999px;
+
+
+    background:
+
+    var(--primary);
+
+
+    color:
+
+    #111;
+
+
+    font-size:
+
+    16px;
+
+
+    font-weight:
+
+    700;
+
+
+    cursor:pointer;
+
+
+    transition:
+
+    .25s;
+
+
+}
+
+
+
+#btnContract:hover{
+
+
+    transform:
+
+    translateY(-3px);
+
+
+}
+/* ==========================================================
+   SHORTCUTS / CARDS PRINCIPAIS
+========================================================== */
+
+
+.shortcuts{
+
+
+    width:100%;
+
+
+    max-width:
+
+    1000px;
+
+
+    margin:
+
+    50px auto;
+
+
+    padding:
+
+    20px;
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+
+    gap:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+
+.shortcut{
+
+
+    min-height:
+
+    190px;
+
+
+    display:flex;
+
+
+    flex-direction:
+
+    column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    text-decoration:none;
+
+
+    color:
+
+    var(--text);
+
+
+    background:
+
+    var(--card);
+
+
+    border:
+
+    1px solid var(--border);
+
+
+    border-radius:
+
+    20px;
+
+
+    padding:
+
+    25px;
+
+
+    transition:
+
+    .25s;
+
+
+}
+
+
+
+
+
+
+
+.shortcut:hover{
+
+
+    border-color:
+
+    var(--primary);
+
+
+    transform:
+
+    translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+.shortcut span{
+
+
+    font-size:
+
+    42px;
+
+
+    margin-bottom:
+
+    15px;
+
+
+}
+
+
+
+
+
+
+
+.shortcut strong{
+
+
+    font-size:
+
+    18px;
+
+
+    margin-bottom:
+
+    8px;
+
+
+}
+
+
+
+.shortcut small{
+
+
+    color:
+
+    var(--text-secondary);
+
+
+    line-height:
+
+    1.5;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+
+footer{
+
+
+    width:100%;
+
+
+    margin-top:
+
+    80px;
+
+
+    padding:
+
+    35px 20px;
+
+
+    border-top:
+
+    1px solid var(--border);
+
+
+}
+
+
+
+
+
+
+
+.footer-container{
+
+
+    max-width:
+
+    900px;
+
+
+    margin:
+
+    auto;
+
+
+    text-align:center;
+
+
+    color:
+
+    var(--text-secondary);
+
+
+}
+
+
+
+.footer-container strong{
+
+
+    display:block;
+
+
+    font-size:
+
+    22px;
+
+
+    color:
+
+    var(--text);
+
+
+    margin-bottom:
+
+    12px;
+
+
+}
+
+
+
+.footer-container p{
+
+
+    margin-top:
+
+    8px;
+
+
+    font-size:
+
+    14px;
+
+
+}
+/* ==========================================================
+   TEMA VISUAL L360º
+========================================================== */
+
+
+/*
+   O controle principal vem dos arquivos:
+
+   assets/theme/dark.css
+   assets/theme/light.css
+
+   Aqui ficam os elementos que
+   precisam responder aos temas.
+*/
+
+
+
+
+
+/* ==========================================================
+   FUNDO COM DEGRADÊ DA MARCA
+========================================================== */
+
+
+body{
+
+
+    background:
+
+
+    radial-gradient(
+
+        circle at 50% 20%,
+
+        rgba(250,208,44,.18),
+
+        transparent 35%
+
+    ),
+
+    var(--background);
+
+
+}
+
+
+
+
+
+[data-theme="light"] body{
+
+
+    background:
+
+
+    radial-gradient(
+
+        circle at 50% 15%,
+
+        rgba(250,208,44,.45),
+
+        transparent 32%
+
+    ),
+
+    linear-gradient(
+
+        180deg,
+
+        #ffffff,
+
+        #f3f3f3
+
+    );
+
+
+}
+
+
+
+
+
+
+
+[data-theme="dark"] body{
+
+
+    background:
+
+
+    radial-gradient(
+
+        circle at 50% 15%,
+
+        rgba(250,208,44,.25),
+
+        transparent 35%
+
+    ),
+
+    linear-gradient(
+
+        180deg,
+
+        #111111,
+
+        #1b1b1b
+
+    );
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   CAMPOS DE PESQUISA
+========================================================== */
+
+
+.search-box input{
+
+
+    background:
+
+    var(--search-background);
+
+
+    color:
+
+    var(--text);
+
+
+}
+
+
+
+
+
+[data-theme="light"] .search-box input{
+
+
+    background:
+
+    #FAD02C;
+
+
+    color:
+
+    #111;
+
+
+}
+
+
+
+
+
+[data-theme="dark"] .search-box input{
+
+
+    background:#ffffff;
+
+    color:#222222;
+
+}
+[data-theme="dark"] .search-box input::placeholder{
+
+    color:#555;
+
+}
+
+
+
+
+
+
+
+.search-box{
+
+
+    box-shadow:
+
+    0 0 25px rgba(250,208,44,.20);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   CARDS
+========================================================== */
+
+
+.shortcut,
+.panel-item,
+.panel-pdfs{
+
+
+    backdrop-filter:
+
+    blur(10px);
+
+
+}
+
+
+
+
+
+
+
+[data-theme="light"] .shortcut,
+[data-theme="light"] .panel-item,
+[data-theme="light"] .panel-pdfs{
+
+
+    background:
+
+    #dddddd;
+
+
+    color:
+
+    #222;
+
+
+}
+
+
+
+
+
+
+
+[data-theme="dark"] .shortcut,
+[data-theme="dark"] .panel-item,
+[data-theme="dark"] .panel-pdfs{
+
+
+    background:
+
+    #2b2b2b;
+
+
+    color:
+
+    #eeeeee;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   BOTÕES
+========================================================== */
+
+
+button{
+
+
+    transition:
+
+    .25s ease;
+
+
+}
+
+
+
+
+
+
+
+[data-theme="light"] button{
+
+
+    color:
+
+    #111;
+
+
+}
+
+
+
+
+
+
+
+[data-theme="dark"] button{
+
+
+    color:
+
+    #111;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   TEXTO RESULTADO DARK
+========================================================== */
+
+
+[data-theme="dark"] .result-card h2,
+[data-theme="dark"] .panel-header,
+[data-theme="dark"] .hero h1{
+
+
+    color:
+
+    #ffffff;
+
+
+}
+[data-theme="dark"] .result-card{
+
+
+    background:#151515;
+
+    border-color:#333;
+
+}
+.result{
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+
+
+
+
+[data-theme="dark"] .result-text,
+[data-theme="dark"] .panel-message,
+[data-theme="dark"] .hero p{
+
+
+    color:
+
+    #dcdcdc;
+
+
+}
+/* ==========================================================
+   RESPONSIVIDADE
+   TABLET / MOBILE
+========================================================== */
+
+
+
+@media(max-width:1024px){
+
+
+
+    .header-container{
+
+        padding:
+
+        0 20px;
+
+    }
+
+
+
+
+    .hero h1{
+
+        font-size:
+
+        42px;
+
+    }
+
+
+
+
+    .shortcuts{
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+
+
+    .panel-grid{
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+
+header{
+
+    padding:
+
+    25px 15px;
+
+}
+
+
+
+.logo{
+
+    width:
+
+    190px;
+
+}
+
+
+
+.header-actions{
+
+    right:
+
+    15px;
+
+}
+
+
+
+
+
+.theme-btn{
+
+    width:
+
+    40px;
+
+    height:
+
+    40px;
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+
+.hero{
+
+    margin-top:
+
+    25px;
+
+    padding:
+
+    15px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:
+
+    32px;
+
+}
+
+
+
+.hero p{
+
+    font-size:
+
+    16px;
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   PESQUISA
+========================================================== */
+
+
+.search-section{
+
+    margin:
+
+    30px auto;
+
+}
+
+
+
+.search-wrapper{
+
+    padding:
+
+    15px;
+
+}
+
+
+
+
+
+.search-box input{
+
+
+    height:
+
+    68px;
+
+
+    font-size:
+
+    16px;
+
+
+    padding:
+
+    0 75px 0 20px;
+
+
+}
+
+
+
+.search-button{
+
+
+    right:
+
+    10px;
+
+
+}
+
+
+
+.search-global{
+
+    display:none;
+
+}
+
+
+
+
+
+
+.location-box{
+
+
+    flex-direction:
+
+    column;
+
+
+    gap:
+
+    15px;
+
+
+}
+
+
+
+.location-box select{
+
+
+    width:
+
+    100%;
+
+
+    height:
+
+    60px;
+
+
+}
+
+
+
+
+
+
+
+.search-tip{
+
+
+    margin-top:
+
+    15px;
+
+
+    font-size:
+
+    13px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================================
+   RESULTADO
+========================================================== */
+
+
+.result-card{
+
+
+    padding:
+
+    35px 20px;
+
+
+}
+
+
+
+.result-score{
+
+
+    font-size:
+
+    62px;
+
+
+}
+
+
+
+.result-card h2{
+
+
+    font-size:
+
+    24px;
+
+
+}
+
+
+
+.result-actions{
+
+
+    flex-direction:
+
+    column;
+
+
+}
+
+
+
+#btnConnect,
+#btnRestart{
+
+
+    width:
+
+    100%;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   MINHA EVOLUÇÃO
+========================================================== */
+
+
+.panel-card{
+
+
+    padding:
+
+    25px 15px;
+
+
+}
+
+
+
+.panel-header{
+
+
+    font-size:
+
+    24px;
+
+
+}
+
+
+
+.panel-grid{
+
+
+    grid-template-columns:
+
+    1fr;
+
+
+}
+
+
+
+.panel-item strong{
+
+
+    font-size:
+
+    26px;
+
+
+}
+
+
+
+#btnContract,
+#btnPanelConnect{
+
+
+    width:
+
+    100%;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================================
+   CARDS
+========================================================== */
+
+
+.shortcuts{
+
+
+    grid-template-columns:
+
+    1fr;
+
+
+    padding:
+
+    15px;
+
+
+}
+
+
+
+.shortcut{
+
+
+    min-height:
+
+    160px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+
+footer{
+
+
+    margin-top:
+
+    50px;
+
+
+    padding:
+
+    30px 15px;
+
+
+}
+
+
+
+.footer-container strong{
+
+
+    font-size:
+
+    20px;
+
+
+}
+
+
+
+.footer-container p{
+
+
+    font-size:
+
+    13px;
+
+
+}
+
+
+}

@@ -1,0 +1,43 @@
+/* ==========================================================
+   Leads 360º Platform
+   Footer
+   Arquivo: _footer.scss
+   Versão: 1.0.0
+========================================================== */
+
+footer{
+
+    width:100%;
+
+    margin-top:60px;
+
+    padding:30px 20px;
+
+    border-top:1px solid #ececec;
+
+}
+
+.footer-container{
+
+    width:100%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.footer-container small{
+
+    color:#606060;
+
+    font-size:.90rem;
+
+    text-align:center;
+
+}

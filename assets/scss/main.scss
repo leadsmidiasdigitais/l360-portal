@@ -1,0 +1,18 @@
+/* ==========================================================
+   Leads 360º Platform
+   Main
+   Versão:1.0.0
+========================================================== */
+
+@use "00_foundation/variables";
+@use "00_foundation/reset";
+@use "00_foundation/body";
+
+@use "01_layout/header";
+@use "01_layout/footer";
+
+@use "02_components/search";
+@use "02_components/result";
+@use "02_components/shortcut";
+
+@use "04_pages/home";
