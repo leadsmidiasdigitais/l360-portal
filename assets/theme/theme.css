@@ -52,21 +52,38 @@
 
 html[data-theme="dark"]{
 
+
     --background:
 
     radial-gradient(
+
         circle at 50% 18%,
+
         rgba(250,208,44,.28),
+
         transparent 38%
+
+    ),
+
+    radial-gradient(
+
+        circle at 80% 90%,
+
+        rgba(250,208,44,.10),
+
+        transparent 35%
+
     ),
 
     linear-gradient(
-        135deg,
-        #050505,
-        #151515
-    );
 
-}
+        135deg,
+
+        #050505,
+
+        #151515
+
+    );
 
 
 
@@ -122,20 +139,38 @@ html[data-theme="dark"]{
 
 html[data-theme="light"]{
 
+
     --background:
 
     radial-gradient(
+
         circle at 50% 15%,
+
         rgba(250,208,44,.40),
+
         transparent 32%
+
+    ),
+
+    radial-gradient(
+
+        circle at 15% 80%,
+
+        rgba(250,208,44,.18),
+
+        transparent 30%
+
     ),
 
     linear-gradient(
-        135deg,
-        #ffffff,
-        #f5f1de
-    );
 
+        135deg,
+
+        #ffffff,
+
+        #f5f1de
+
+    );
 
 
 
@@ -681,44 +716,5 @@ a{
         grid-template-columns:1fr;
 
     }
-
-}
-/* ==========================================================
-   AJUSTE CARDS DARK
-========================================================== */
-
-
-html[data-theme="dark"] .card,
-html[data-theme="dark"] .result-card,
-html[data-theme="dark"] .panel-card{
-
-
-    background:#333333;
-
-    color:#ffffff;
-
-
-}
-
-
-html[data-theme="dark"] .card p,
-html[data-theme="dark"] .result-card p,
-html[data-theme="dark"] .panel-card p{
-
-
-    color:#ffffff;
-
-
-}
-
-
-html[data-theme="dark"] h1,
-html[data-theme="dark"] h2,
-html[data-theme="dark"] h3,
-html[data-theme="dark"] strong{
-
-
-    color:#ffffff;
-
 
 }
