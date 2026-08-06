@@ -718,3 +718,42 @@ a{
     }
 
 }
+/* ==========================================================
+   AJUSTE CARDS DARK
+========================================================== */
+
+
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .result-card,
+html[data-theme="dark"] .panel-card{
+
+
+    background:#333333;
+
+    color:#ffffff;
+
+
+}
+
+
+html[data-theme="dark"] .card p,
+html[data-theme="dark"] .result-card p,
+html[data-theme="dark"] .panel-card p{
+
+
+    color:#ffffff;
+
+
+}
+
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] strong{
+
+
+    color:#ffffff;
+
+
+}
